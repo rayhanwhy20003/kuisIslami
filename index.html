@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kuis Sederhana</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- bagian start -->
+    <div class="min-h-screen flex justify-center items-center" id="Start-kuis">
+      <div class="w-full max-w-md p-6 bg-lime-400 flex flex-col items-center rounded-xl">
+       
+        <h1 class="font-medium">Ada 25 soal</h1>
+        <h1 class="font-medium">1 soal bernilai 4 point</h1>
+        <h1 class="font-medium">dengan waktu 2 menit</h1>
+        <button class="p-3 w-full max-w-[200px] bg-green-500 rounded-md mt-5" id="Start">Mulai</button>
+      </div>
+    </div>
+    <!-- bagian start -->
+
+    <div class="mt-2 flex h-screen flex-col bg-slate-300 hidden" id="kontent-kuis">
+      <h1 class="text-2xl font-semibold text-center">Kuis Sederhana</h1>
+      <h1 class="text-2xl font-extrabold text-center font-['Roboto'] m-5 text-green-500">Soal ini menentukan apakah anda islam KTP atau tidak</h1>
+       <!-- bagian konten kuis -->
+      <h3 class="px-5 py-2 bg-red-500 w-max text-center rounded-t-xl mx-auto text-white" id="time">00:00</h3>
+
+      <div class="max-h-screen flex justify-center ">
+        <div class="w-[400px] mx-4 p-6 max-h-max bg-gradient-to-r from-yellow-200 to-green-500 flex flex-col items-center rounded-xl font-['Roboto']"id="Kuis">
+          
+          
+
+          <!-- <h2 class="text-2xl font-bold">Siapa Presiden Pertama?</h2>
+
+           <button class="bg-green-200 w-full mt-2 rounded-lg p-3 jawaban">Ir.Soekarno</button> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Bagian Modal -->
+    <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden ">
+      <div class="bg-white p-6 rounded-lg w-full max-w-sm m-4">
+        <h2 class="text-2xl font-bold text-center">NILAI KAMU</h2>
+        <h1 class="text-5xl font-bold text-yellow-400 text-center p-3" id="Hasil"></h1>
+        <h1 class="text-2xl font-bold text-yellow-400 text-center p-3" id="katapujian"></h1>
+        <h2 class="text-xl font-semibold text-center mt-4">Terima Kasih sudah menjawab!</h2>
+        <button id="tutup-modal" class="mt-4 bg-red-500 text-white py-2 px-4 rounded-md w-full">Tutup</button>
+      </div>
+    </div>
+    <!-- Bagian Modal -->
+    <script src="script.js"></script>
+  </body>
+</html>
+
