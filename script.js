@@ -313,7 +313,7 @@ const soal = [
                 ${pertanyaan.Pilihanjawaban.map(
                 (jwb) =>
                     ` <button class="bg-green-200 w-full
-                 mt-2 rounded-lg p-3 hover:bg-green-500 jawaban" data-daftarjawaban="${jwb}">${jwb}</button></div>`
+                 mt-2 rounded-lg p-3 jawaban" data-daftarjawaban="${jwb}">${jwb}</button></div>`
                 ).join("")}`;
 
         document.querySelectorAll(".jawaban").forEach((button) => {
